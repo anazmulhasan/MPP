@@ -13,7 +13,7 @@
 
 <body>
     <!-- header start  -->
-    <header>
+    <header class="active">
         <a class="logo" href="#">AA Maruf.</a>
         <i class="fa-solid fa-bars" id="menu-icon"></i>
         <nav>
@@ -26,8 +26,19 @@
     </header>
     <!-- header end -->
 
+    <!-- bars background start -->
+    <div class="bars-box active">
+        <div class="bar" style="--i:6;"></div>
+        <div class="bar" style="--i:5;"></div>
+        <div class="bar" style="--i:4;"></div>
+        <div class="bar" style="--i:3;"></div>
+        <div class="bar" style="--i:2;"></div>
+        <div class="bar" style="--i:1;"></div>
+    </div>
+    <!-- bars background end -->
+
     <!-- hero section start -->
-    <section class="hero ">
+    <section class="hero active">
         <div class="home-info">
             <h1>Abdullah Al-Maruf</h1>
             <h2>I'm a
@@ -60,7 +71,7 @@
     <!-- hero section end -->
 
     <!-- services section start -->
-    <section class="services Active-s">
+    <section class="services">
         <h2 class="heading">My <span>Services</span></h2>
         <div class="services-container">
             <!-- 1 -->
@@ -512,8 +523,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="contact-box">
-                    <form action="">
+                <div class="contact-box ">
+                    <form class="cn-box">
                         <h2 class="heading">Contact <span>Me!</span></h2>
                         <div class="filed-box">
                             <input type="text" placeholder="Full Name" required>
@@ -522,26 +533,13 @@
                             <input type="text" placeholder="Email Subject" required>
                             <textarea name="" id="" placeholder="Your Message" required></textarea>
                         </div>
-                        <button type="submit" class="btn">Send Message</button>
+                        <button class="btn-2" type="submit" class="btn">Send Message</button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
     <!-- contact section end -->
-
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
     <script src="src/custom.js"></script>
 </body>
 
