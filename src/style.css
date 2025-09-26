@@ -27,10 +27,10 @@ body {
     background: var(--bg);
     color: var(--b-text);
     font-family: "Outfit", sans-serif;
-    ::selection {
-        color: var(--s-text);
-        background: var(--s-bg);
-    }
+}
+::selection {
+    color: var(--s-text);
+    background: var(--s-bg);
 }
 
 a {
@@ -40,9 +40,10 @@ a {
 li {
     list-style: none;
 }
-/* besice  */
+/*-------------------- besice ---------------------------------*/
 
 
+/* -------------------- header  -------------------- */
 header {
     position: fixed;
     top: 0;
@@ -94,7 +95,7 @@ nav .active {
     display: none;
 }
 
-/* bars-bg */
+/*----------------------------- bars-bg -----------------------*/
 .bars-box {
     width: 100%;
     height: 100%;
@@ -135,8 +136,7 @@ nav .active {
         transform: translateY(0);
     }
 }
-
-/* hero section start */
+/* -------------------- hero section start -------------------- */
 section.hero {
     position: absolute;
     width: 100%;
@@ -271,7 +271,7 @@ section.active {
     box-shadow: 0 0 1rem var(--text-green);
 }
 
-/* image */
+/*-------------------- image ---------------------*/
 .home-img .img-box {
     position: relative;
     width: 32vw;
@@ -326,7 +326,8 @@ section.active {
     mix-blend-mode: lighten;
 }
 
-/* services section start */
+
+/* --------------------services section start-------------------- */
 .services {
     padding: 100px 9%;
     visibility: hidden;
@@ -421,9 +422,9 @@ section.active {
     font-size: 1.6rem;
 }
 
-/* services section end */
+/*----------------------- services section end ---------------------*/
 
-/* resume section start */
+/*--------------------------- resume section start -----------------*/
 .resume {
     padding: 9%;
 }
@@ -493,7 +494,7 @@ section.active {
     font-size: 3.5rem;
     text-align: left;
 }
-/* Eduction start */
+/*---------------- Eduction start---------------- */
 .resume-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -509,12 +510,16 @@ section.active {
 .resume-list::-webkit-scrollbar-thumb {
     background: transparent;
     border-radius: 1rem;
-    background: var(--text-green);
+    background: var(--text-green); 
 }
 
-/* .resume-list:hover::-webkit-scrollbar-thumb {
+.resume-list::-webkit-scrollbar {
+    background: transparent;
+} 
 
-} */
+.resume-list:hover::-webkit-scrollbar-thumb {
+    background: var(--text-green);
+}
 
 .resume-list .resume-item {
     background: var(--s-bg-color);
@@ -550,9 +555,9 @@ section.active {
     border-radius: 50%;
     margin-left: -2rem;
 }
-/* Eduction end */
+/*----------------------------- Eduction end -----------------------*/
 
-/* Skills start */
+/*------------------------------- Skills start ---------------------*/
 .Skills .resume-list {
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     height: auto;
@@ -606,9 +611,9 @@ svg path {
     opacity: 1;
     transform: scale(1);
 }
-/* Skills end */
+/*------------------------ Skills end ----------------------------*/
 
-/* About start */
+/*----------------------- About start --------------------------*/
 .About .resume-list {
     height: auto;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -629,12 +634,11 @@ svg path {
     margin-left: 1rem;
     font-size: 1.6rem;
 }
-/* About end */
-/* resume section end */
+/*--------------- About end -------------------*/
+/*--------------------- resume section end --------------------*/
 
-****************************
 
-/* portfolio section start */
+/*---------------- portfolio section start --------------------*/
 .portfolio {
     width: 100%;
     height: auto;
@@ -779,9 +783,9 @@ svg path {
 .portfolio-box .navigation .arrow-right {
     margin-left: 1.5rem;
 }
-/* portfolio section end */
+/*----------------- portfolio section end ------------------------*/
 
-/* contact section start */
+/*------------------ contact section start ------------------------*/
 .contact {
     width: 100%;
     padding: 2% 9%;
@@ -899,9 +903,9 @@ svg path {
     color: var(--text-green);
     box-shadow: none;
 }
-/* contact section end */
+/*--------------------------- contact section end ---------------*/
 
-/* breakpoints */
+/*-------------------------- breakpoints ---------------------------*/
 @media screen and (max-width:1200px) {
     html {
         font-size: 55%;
@@ -935,7 +939,7 @@ svg path {
         padding: 1rem 0;
         background: var(--bg);
         border-top: .1rem solid rgba(0, 0, 0, .2);
-        box-shadow: 0 .5trm 1rem rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
         text-align: center;
         display: none;
     }
