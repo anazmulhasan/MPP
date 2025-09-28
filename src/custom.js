@@ -14,22 +14,22 @@ const activePage = () => {
   const header = document.querySelector("header");
   const barsBox = document.querySelector(".bars-box");
 
-  header.classList.add("active");
+  header.classList.remove("active");
   setTimeout(() => {
-    header.classList.remove("active");
+    header.classList.add("active");
   }, 1100);
 
   navLinks.forEach((link) => {
     link.classList.remove("active");
   });
-  barsBox.classList.add("active");
+  barsBox.classList.remove("active");
   setTimeout(() => {
-    barsBox.classList.remove("active");
+    barsBox.classList.add("active");
   }, 1100);
   sections.forEach((section) => {
     section.classList.remove("active");
   });
-  menuIcon.classList.remove("fa-bars"); // hide/show bars
+  menuIcon.classList.add("fa-bars"); // hide/show bars
   menuIcon.classList.remove("fa-xmark"); // show/hide X
   navbar.classList.remove("active");
 };
